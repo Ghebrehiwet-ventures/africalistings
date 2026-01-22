@@ -43,7 +43,7 @@ export default function ValuationPage() {
       </section>
 
       {/* Valuation Form Section */}
-      <Section id="valuation-form">
+      <Section>
         <Container>
           <div className="max-w-2xl mx-auto">
             <div className="bg-white rounded-form p-10 shadow-sm border border-gray-100">
