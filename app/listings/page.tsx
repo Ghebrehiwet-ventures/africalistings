@@ -146,12 +146,12 @@ export default function ListingsPage() {
                         <div className="max-w-6xl mx-auto">
                                   <h1 className="text-4xl md:text-5xl font-bold mb-4">
                                               Find Your Dream Property in Africa
-                                  </h1>h1>
+                                  </h1>
                                   <p className="text-xl opacity-90">
                                               Aggregated listings from top brokers across the continent
-                                  </p>p>
-                        </div>div>
-                </div>div>
+                                  </p>
+                        </div>
+                </div>
           
                 <div className="max-w-6xl mx-auto px-8 py-12">
                         <div className="flex flex-wrap gap-2 mb-8">
@@ -166,13 +166,13 @@ export default function ListingsPage() {
                                             }`}
                                           >
                               {country}
-                          </button>button>
+                          </button>
                         ))}
-                        </div>div>
+                        </div>
                 
                         <p className="text-gray-600 mb-6">
                                   Showing {filteredListings.length} properties
-                        </p>p>
+                        </p>
                 
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                             {filteredListings.map((listing) => (
@@ -189,42 +189,42 @@ export default function ListingsPage() {
                                                         <div className="absolute top-4 left-4">
                                                                           <span className="bg-amber-600 text-white px-3 py-1 rounded-full text-sm font-medium">
                                                                               {listing.country}
-                                                                          </span>span>
-                                                        </div>div>
+                                                                          </span>
+                                                        </div>
                                                         <div className="absolute top-4 right-4">
                                                                           <span className="bg-white/90 backdrop-blur px-3 py-1 rounded-full text-sm">
                                                                               {listing.property_type}
-                                                                          </span>span>
-                                                        </div>div>
-                                        </div>div>
+                                                                          </span>
+                                                        </div>
+                                        </div>
                           
                                         <div className="p-5">
                                                         <h2 className="font-bold text-xl mb-2 text-gray-800">
                                                             {listing.title}
-                                                        </h2>h2>
+                                                        </h2>
                                                         <p className="text-gray-500 text-sm mb-3">
                                                             {listing.location}
-                                                        </p>p>
+                                                        </p>
                                                         <p className="text-2xl font-bold text-amber-600 mb-4">
                                                                           ${listing.price.toLocaleString()}
-                                                        </p>p>
+                                                        </p>
                                         
                                                         <div className="flex gap-4 text-sm text-gray-600 mb-4">
-                                                                          <span>{listing.bedrooms} beds</span>span>
-                                                                          <span>{listing.bathrooms} baths</span>span>
-                                                                          <span>{listing.area_sqm} m2</span>span>
-                                                        </div>div>
+                                                                          <span>{listing.bedrooms} beds</span>
+                                                                          <span>{listing.bathrooms} baths</span>
+                                                                          <span>{listing.area_sqm} m2</span>
+                                                        </div>
                                         
                                                         <div className="pt-4 border-t border-gray-100">
                                                                           <p className="text-xs text-gray-400">
-                                                                                              Listed by <span className="font-medium text-gray-600">{listing.broker}</span>span>
-                                                                          </p>p>
-                                                        </div>div>
-                                        </div>div>
-                          </div>div>
+                                                                                              Listed by <span className="font-medium text-gray-600">{listing.broker}</span>
+                                                                          </p>
+                                                        </div>
+                                        </div>
+                          </div>
                         ))}
-                        </div>div>
-                </div>div>
-          </div>div>
+                        </div>
+                </div>
+          </div>
         )
 }</div>
