@@ -22,7 +22,7 @@ export default function Navbar() {
         href="/"
         className="text-[20px] font-normal tracking-[-0.8px] text-logo"
       >
-        Hillcrest Realty
+        africa.estate
       </Link>
 
       {/* Desktop Navigation */}
