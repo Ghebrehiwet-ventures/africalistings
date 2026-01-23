@@ -136,8 +136,10 @@ const countries = ['All', 'Kenya', 'South Africa', 'Nigeria', 'Ghana', 'Morocco'
 export default function ListingsPage() {
       const [selectedCountry, setSelectedCountry] = useState('All')
 
-  const filteredListings = selectedCountry === 'All'        ? listings
-    : listings.filter(l => l.country === selectedCountry)
+  const filteredListings = selectedCountry === 'All'
+        ? listings
+          : listings.filter(l => l.country === selectedCountry)
+
   return (
           <div className="min-h-screen bg-gradient-to-b from-amber-50 to-white">
                 <div className="bg-gradient-to-r from-amber-600 to-orange-500 text-white py-16 px-8">
@@ -153,10 +155,13 @@ export default function ListingsPage() {
           
                 <div className="max-w-6xl mx-auto px-8 py-12">
                         <div className="flex flex-wrap gap-2 mb-8">
-                            {countries.map(country => (                          <button
+                            {countries.map(country => (
+                          <button
                                             key={country}
-              onClick={() => setSelectedCountry(country)}                                            className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
-                                selectedCountry === country                                                                  ? 'bg-amber-600 text-white'
+                                            onClick={() => setSelectedCountry(country)}
+                                            className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
+                                                                selectedCountry === country
+                                                                  ? 'bg-amber-600 text-white'
                                                                   : 'bg-white text-gray-700 border border-gray-200 hover:border-amber-400'
                                             }`}
                                           >
@@ -170,7 +175,8 @@ export default function ListingsPage() {
                         </p>p>
                 
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                            {filteredListings.map((listing) => (                          <div
+                            {filteredListings.map((listing) => (
+                          <div
                                             key={listing.id}
                                             className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
                                           >
@@ -206,7 +212,7 @@ export default function ListingsPage() {
                                                         <div className="flex gap-4 text-sm text-gray-600 mb-4">
                                                                           <span>{listing.bedrooms} beds</span>span>
                                                                           <span>{listing.bathrooms} baths</span>span>
-                                                                          <span>{listing.area_sqm} m²</span>span>
+                                                                          <span>{listing.area_sqm} m2</span>span>
                                                         </div>div>
                                         
                                                         <div className="pt-4 border-t border-gray-100">
